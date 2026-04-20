@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/.nekoweb-api/static/site.js" type="text/javascript" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nijiro Cake</title>
+  <link rel="icon" type="image/x-icon" href="https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/rana/ywlskv.gif">
+    <style>
+      
+      @font-face {
+            font-family: "KGRedHands";
+            src: url('https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/rana/g8w6mh.ttf');
+        }
+      
+      @font-face {
+            font-family: "04B_30";
+            src: url('https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/rana/6g7apf.TTF');
+        }
+      
+        body {
+            font-family: "MS PGothic", sans-serif;
+            background: url("https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/rana/gljudq.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(250, 195, 203, 0.6);
+            background-blend-mode: lighten;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 111vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            background-color: #fff4e3;
+            width: 600px;
+            height: 500px;
+            overflow-y: auto;
+            padding: 20px;
+            border: 5px groove #ff697f;
+            border-radius: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            position: relative;
+            margin-right: -400px;
+        }
+
+        .header {
+            background: url("https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/rana/slggsr.jpg");
+            background-size: 24%;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            border: 2px outset #ffa6be;
+        }
+
+        .header button {
+            background-color: #ffe5e9;
+            border: 2px inset #ffa6be;
+            border-radius: 5px;
+            padding: 8px 12px;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #a34a59;
+            font-family: "KGRedHands";
+        }
+
+        .header button:hover {
+            background-color: #e0586e;
+            color: #ffe3e8;
+        }
+
+        .title {
+            font-size: 24px;
+            color: #c7002e;
+            margin-bottom: 10px;
+            text-align: left;
+            font-family: "04B_30";
+        }
+
+        .info {
+            font-size: 14px;
+            color: #870f2b;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .separator {
+            border-top: 2px dashed #e0586e;
+            margin: 20px 0;
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            color: #9e0025;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .text {
+            font-size: 1.1em;
+            color: #4f0012;
+            margin-bottom: 15px;
+        }
+
+        .text span {
+            font-weight: bold;
+            color: #9e0052;
+        }
+      
+      .text li {
+        list-style-image: url("https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/rana/0ec7qv.gifv");
+      }
+      
+      .text a {
+        text-decoration: none;
+        color:#ff2457;
+      }
+      
+      .text a:hover {
+        font-style: italic;
+        color: #940325;
+      }
+
+        .images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .images img {
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            background-color: #ffe5e9;
+            padding: 10px;
+            border: 2px outset #ffa6be;
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #c17a83;
+            margin-top: 55px;
+            text-align: center;
+        }
+      
+      .image {
+        position: relative;
+        z-index: 1000;
+      }
+
+      .decorative-image {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    inset: auto;
+}
+
+.rana {
+    bottom: -277px;
+    left: 544px;
+    background-image: url('https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/rana/s6sp18.png');
+    width: 476px;
+    height: 476px;
+}
+      
+      .rana2 {
+    bottom: -288px;
+    left: -145px;
+    background-image: url('https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/rana/qvif33.5_');
+    width: 246px;
+    height: 246px;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+      
+       ::-webkit-scrollbar {
+            width: 6px;
+            height: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #ffe6f0;
+            border: 2px solid #eb9bad;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(90deg, rgba(255,188,188,1) 0%, rgba(255,225,116,1) 100%);
+            border-radius: 10px;
+            border: 2px solid #eb9bad;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(90deg, rgba(255,133,133,1) 0%, rgba(255,238,176,1) 100%);
+        }
+
+    </style>
+    
+</head>
+<body>
+  <div class="image">
+        <div class="decorative-image rana"></div>
+        <div class="decorative-image rana2"></div>
+  </div>
+  
+    <div class="container">
+        <div class="header">
+            <button>home</button>
+            <button>art</button>
+            <button>hair</button>
+            <button>link</button>
+        </div>
+
+        <div class="title">an artist</div>
+        <div class="info">fueled by treats</div>
+
+        <div class="separator"></div>
+
+        <div class="section active">
+            <div class="GLITCH ART"></div>
+            <div class="text"><p>I'm cloud I basically do a bunch of random stuff.</p>
+              <ul>
+                <img src="glitch1.png" width="500">
+                <img src="glitch2.png" width="500">
+              </ul>
+            <div class="images">
+                <img src="https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/rana/fwxb31.png">
+                <img src="https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/rana/lta4kb.pnj">
+                <img src="https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/rana/wvxfiz.pnj">
+                <img src="https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/rana/sfdxtt.pnj">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">art</div>
+            <div class="text">this is a few of my favorite pieces over the years</div>
+            <img src="girlbw.png" width="500">
+            <img src="facecups.jpg" width="500">
+            <img src="ladybun.jpg" width="500">
+            <img src="planetbunny.jpg" width="500">
+            <img src="puddingprint copy.jpg" width="500">
+
+
+
+        </div>
+
+        <div class="section">
+            <div class="section-title">hair</div>
+            <div class="text">pictures of hairs i've done on either myself or other people</div>
+            <img src="hair.jpg" width="500">
+        </div>
+
+        <div class="section">
+            <div class="section-title">insta</div>
+            <div class="text">@tigercups on insta!</div>
+        </div>
+
+        <div class="footer">&copy; 2025 electric-tenshi.</div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.header button');
+            const sections = document.querySelectorAll('.section');
+
+            buttons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    sections.forEach(section => section.classList.remove('active'));
+                    sections[index].classList.add('active');
+                });
+            });
+
+            // Show the first section by default
+            if (sections.length > 0) {
+                sections[0].classList.add('active');
+            }
+        });
+    </script>
+    
+</body>
+</html>
